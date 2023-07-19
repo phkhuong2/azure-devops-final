@@ -6,7 +6,7 @@ import datetime
 
 # Start the browser and perform the test
 def start ():
-    print (timestamp() + 'Open chrome')
+    print (timestamp() + 'Starting the browser ...')
     # --uncomment when running in Azure DevOps.
     options = ChromeOptions()
     
@@ -32,10 +32,10 @@ def login (driver, user, password):
     print (timestamp() + 'Browser started successfully. Navigating to the demo page to login.')
     driver.get('https://www.saucedemo.com/')
 
-    print (timestamp() + 'Enter username standard_user')
+    print (timestamp() + 'Input username standard_user')
     driver.find_element(By.CSS_SELECTOR, "input[id = 'user-name']").send_keys(user)
 
-    print (timestamp() + 'Enter password secret_sauce')
+    print (timestamp() + 'Input password secret_sauce')
     driver.find_element(By.CSS_SELECTOR, "input[id = 'password']").send_keys(password)
 
     print (timestamp() + 'Click login button')
