@@ -13,7 +13,7 @@ pool: khuongPool
 variables:
   python.version: '3.7.6'
   # ToDo: Replace the service connection name as used in the DevOps project settings
-  azureServiceConnectionId: 'a2a2d0ce-1896-4d94-9e81-02be71d166b2'
+  azureServiceConnectionId: '71a5650b-dbe6-4362-929a-a1e9cad24c6d'
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
   # Environment name
