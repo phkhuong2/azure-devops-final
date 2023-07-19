@@ -22,7 +22,7 @@ resource "azurerm_linux_virtual_machine" "test" {
   network_interface_ids = [azurerm_network_interface.test.id]
   admin_ssh_key {
     username   = "${var.admin_username}"
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHGwH5jj478LJ7aZKeno+FfPEx7hJh6UOxVOxBFAcaMKvMeEF6LHEXAj8PRGnu8FFqdMkxGyGLt//GwTgSWw9mub2Fp3IAdYGPTmBzfNWDkSdJmc4jmPrbch+Fqh8bEe+biUcQ5g2QRUCKWLXsHbR4hwg9B8+gPFR4I4wh6kOKnQW+/ZCe1pB2j09dxr2WELzSflE+f7ErAnuhVzYtfQWlrFTiLEcxjVsqf2+Ra0QUgOGJPXM3aeNywClSdMGExQKhaQLWWPT6hyUbIXOwHuY+8KtU1bp9b832m/KoHkgx7K7DugPAh8VsZaFe+I3csYHE2ZuopuWwQrIXOrs7yNeiX5Ij9u7GqOK9ut"
+    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHGwH5jj478LJ7aZKeno+FfPEx7hJh6UOxVOxBFAcaMKvMeEF6LHEXAj8PRGnu8FFqdMkxGyGLt//GwTgSWw9mub2Fp3IAdYGPTmBzfNWDkSdJmc4jmPrbch+Fqh8bEe+biUcQ5g2QRUCKWLXsHbR4hwg9B8+gPFR4I4wh6kOKnQW+/ZCe1pB2j09dxr2WELzSflE+f7ErAnuhVzYtfQWlrFTiLEcxjVsqf2+Ra0QUgOGJPXM3aeNywClSdMGExQKhaQLWWPT6hyUbIXOwHuY+8KtU1bp9b832m/KoHkgx7K7DugPAh8VsZaFe+I3csYHE2ZuopuWwQrIXOrs7yNeiX5Ij9u7GqOK9ut6sU+YAQeqXuLfv6F0VM0Wji2eOGA5SNt0iUywn0FxL58Zu9noubA1mpp3/rCe4GH0K0Pim93cRi8CkrqldK9qdrDNcZqlHKvZcUGc4QF4mAdx+6nuCMPLErSImVnlIkCXwLopQ2m5PQmxJREAICsqmy+Pdwh8= devopsagent@khuongLinuxVM"
   }
   os_disk {
     caching           = "ReadWrite"
